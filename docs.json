@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "mint",
   "name": "SayuritaBOT",
   "colors": {
     "primary": "#f87171",
@@ -11,12 +11,18 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Guias",
         "groups": [
           {
-            "group": "parkejunior",
+            "group": "Parkejunior",
             "pages": [
-              "essentials/rewards"
+              "parkejunior/rewards-guide"
+            ]
+          },
+          {
+            "group": "Lista de comandos",
+            "pages": [
+              "commands/roladas"
             ]
           }
         ]
@@ -30,7 +36,7 @@
   "navbar": {
     "links": [
       {
-        "label": "Home",
+        "label": "Página Inicial",
         "href": "https://sayuritabot.vercel.app"
       }
     ]

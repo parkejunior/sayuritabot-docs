@@ -1,0 +1,215 @@
+---
+title: '!roladas'
+description: 'O comando `!roladas` permite manipular as recompensas dos apoiadores'
+---
+
+## `!roladas`
+
+Mostra a quantidade de recompensas não usadas para cada tipo de item.
+
+Os tipos de itens mostrados são: `Acessório`, `Balão`, `Receita`, `Filme` e `Série/Anime`.
+
+## `!roladas add`
+
+Adiciona uma recompensa a um usuário após o item cair na roleta.
+
+<Warning>Esse comando está apenas disponível para **moderadores** e **streamers**.</Warning>
+
+### Sintaxe
+
+```bash
+!roladas add <username> <tipo_de_donate> <item>
+```
+
+### Exemplo
+
+```bash
+!roladas add @parkejunior resub filme
+```
+
+### Props
+
+<ResponseField name="username" type="string" required>
+  O nome do usuário que receberá a recompensa. Pode conter ou não o `@`.
+</ResponseField>
+
+<ResponseField name="tipo_de_donate" type="string" required>
+  Tipo de *donate* feito pelo apoiador.
+
+  Os tipos disponíveis são: `sub`, `resub`, `subgift`, `bits` e `livepix`.
+</ResponseField>
+
+<ResponseField name="item" type="string" required>
+  Tipo de item recebido.
+
+  Os tipos disponíveis são: `acessório`, `balão`, `receita`, `filme` e `série`.
+
+  *Os tipos podem conter ou não acentuações.*
+</ResponseField>
+
+---
+
+## `!roladas escolher`
+
+Permite escolher o conteúdo de um item recebido.
+
+
+<Tabs>
+  <Tab title="Filmes, séries ou animes">
+    ### Sintaxe
+
+    ```bash
+    !roladas escolher <item> <link_do_IMDb>
+    ```
+
+    ### Exemplo
+
+    ```bash
+    !roladas escolher filme https://www.imdb.com/title/tt7286456/
+    ```
+
+    ### Props
+
+    <ResponseField name="item" type="string" required>
+      Tipo de item recebido.
+
+      Os tipos disponíveis são: `acessório`, `balão`, `receita`, `filme` e `série`.
+
+      *Os tipos podem conter ou não acentuações.*
+    </ResponseField>
+
+    <ResponseField name="link_do_IMDb" type="string" required>
+      Link do filme, série ou anime no IMDb. Deve conter o `https://`.
+    </ResponseField>
+  </Tab>
+
+  <Tab title="Outros">
+    ### Sintaxe
+
+    ```bash
+    !roladas escolher <item> <descricao>
+    ```
+
+    ### Exemplo
+
+    ```bash
+    !roladas escolher receita Bolo de cenoura
+    ```
+
+    ### Props
+
+    <ResponseField name="item" type="string" required>
+      Tipo de item recebido.
+
+      Os tipos disponíveis são: `acessório`, `balão`, `receita`, `filme` e `série`.
+
+      *Os tipos podem conter ou não acentuações.*
+    </ResponseField>
+
+    <ResponseField name="descricao" type="string" required>
+      Descrição do item escolhido.
+    </ResponseField>
+  </Tab>
+</Tabs>
+
+---
+
+## `!roladas trocar`
+
+Troca ou combina dois itens em um novo.
+
+<Note>Apenas os itens **Filme** e **Série/Anime** podem ser trocados um pelo outro, sem necessidade de ter 2 items na troca. Para trocar outros tipos de itens, veja a aba [combinar](#combinar)</Note>
+
+<Tabs>
+  <Tab title="Filme, série ou anime">
+    ### Sintaxe
+
+    ```bash
+    !roladas trocar <item_antigo> = <item_novo>
+    ```
+
+    ### Exemplo
+
+    ```bash
+    !roladas trocar série = filme
+    ```
+
+    ### Props
+
+    <ResponseField name="item_*" type="string" required>
+      Tipo de item a ser combinado.
+
+      Os tipos disponíveis são: `filme` ou `série`.
+
+      *Os tipos podem conter ou não acentuações.*
+    </ResponseField>
+  </Tab>
+
+  <Tab title="Combinar">
+    ### Sintaxe
+
+    ```bash
+    !roladas trocar <item_um> + <item_dois> = <item_novo>
+    ```
+
+    ### Exemplo
+
+    ```bash
+    !roladas trocar receita + acessório = filme
+    ```
+
+    ### Props
+
+    <ResponseField name="item_*" type="string" required>
+      Tipo de item a ser combinado.
+
+      Os tipos disponíveis são: `acessório`, `balão` ou `receita`.
+
+      *Os tipos podem conter ou não acentuações.*
+    </ResponseField>
+
+    <ResponseField name="item_novo" type="string" required>
+      Tipo de item a ser recebido na combinação.
+
+      Os tipos disponíveis são: `acessório`, `balão`, `receita`, `filme` e `série`.
+
+      *Os tipos podem conter ou não acentuações.*
+    </ResponseField>
+  </Tab>
+</Tabs>
+
+---
+
+## `!roladas transferir`
+
+Transfere um item para outro usuário.
+
+### Sintaxe
+
+```bash
+!roladas transferir <item> <username>
+```
+
+### Exemplo
+
+```bash
+!roladas transferir receita @parkejunior
+```
+
+### Props
+
+<ResponseField name="item" type="string" required>
+  Tipo de item recebido.
+
+  Os tipos disponíveis são: `acessório`, `balão`, `receita`, `filme` e `série`.
+
+  *Os tipos podem conter ou não acentuações.*
+</ResponseField>
+
+<ResponseField name="username" type="string" required>
+  O nome do usuário que receberá a recompensa. Pode conter ou não o `@`.
+</ResponseField>
+
+## `!roladas lista`
+
+Mostra o link da lista completa de recompensas.
