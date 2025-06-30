@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "maple",
+  "name": "SayuritaBOT",
   "colors": {
     "primary": "#f87171",
     "light": "#f87171",
@@ -25,7 +25,7 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark-sayurita.svg"
   },
   "navbar": {
     "links": [
