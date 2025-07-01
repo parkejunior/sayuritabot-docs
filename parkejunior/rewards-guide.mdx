@@ -1,7 +1,7 @@
 ---
-title: 'Guia de Recompensas para Apoiadores'
-description: 'Entenda como funcionam os benefícios e recompensas para apoadores do canal'
-icon: 'crown'
+title: "Guia de Recompensas para Apoiadores"
+description: "Entenda como funcionam os benefícios e recompensas para apoiadores do canal"
+icon: "crown"
 ---
 
 # Como funciona
@@ -10,7 +10,7 @@ Ao se tornar um **Inscrito** no canal do [parkejunior](https://www.twitch.tv/par
 
 Este guia explica os detalhes sobre como funcionam as recompensas, como utilizá-las como trocar ou tranferir itens.
 
-<Card title="Documentação do comando !roladas" icon="book" href="/commands/roladas" arrow="true" cta="Ler documentação">
+<Card title="Documentação do comando !roladas" icon="book" href="/commands/roladas" cta="Ler documentação">
   Você também pode ler a documentação do comando `!roladas` para mais detalhes de como utilizá-lo.
 </Card>
 
@@ -20,29 +20,31 @@ Este guia explica os detalhes sobre como funcionam as recompensas, como utilizá
 
 Ao se inscrever no canal, você recebe:
 
-* 🚫 **Sem anúncios** durante as lives
-* 🏷️ **Badge personalizado** ao lado do seu nome
-* 😄 **Emotes exclusivos** que podem ser usados em qualquer canal da Twitch ou Discord
-* 🎰 Ganha uma **rolada** na roleta e recebe recompensas para apoiadores
-* 🎥 Acesso aos [VODs dos filmes, séries e receitas](https://discord.com/channels/1185785552562307262/1337053137919410260) gravados em live, no nosso Telegram
+- 🚫 **Sem anúncios** durante as lives
+- 🏷️ **Badge personalizado** ao lado do seu nome
+- 😄 **Emotes exclusivos** que podem ser usados em qualquer canal da Twitch ou Discord
+- 🎰 Ganha uma **rolada** na roleta e recebe recompensas para apoiadores
+- 🎥 Acesso aos [VODs dos filmes, séries e receitas](https://discord.com/channels/1185785552562307262/1337053137919410260) gravados em live, no nosso Telegram
 
 ---
 
 ## 🎰 Como funciona a Roleta
 
-Apoiando o canal com **Inscrição** ou **Incrição de Presente**, enviando **100 bits** ou doando **R$ 10** no Livepix, você recebe uma rolada na nossa roleta! 
+Apoiando o canal com **Inscrição** ou **Incrição de Presente**, enviando **100 bits** ou doando **R\$ 10** no Livepix, você recebe uma rolada na nossa roleta\!
 
 Os tipos de item que você pode receber na roleta são:
 
-* Acessório
-* Balão
-* Receita
-* Filme
-* Série/Anime *(também podem ser desenhos, novelas, etc.)*
+- Acessório
+- Balão
+- Receita
+- Filme
+- Série/Anime _(também podem ser desenhos, novelas, etc.)_
 
 Assim que a rolada acontecer, um moderador ou o streamer adicionará seu item, e você poderá escolher o conteúdo dessa recompensa.
 
-<Note>Cada **Incrição de Presente**, **100 bits** ou **R$ 10** equivale a uma *rolada*. Por exemplo, se forem dados 5 Incrições de presente, você receberá 5 roladas.</Note>
+<Note>
+  Cada **Incrição de Presente**, **100 bits** ou **R\$ 10** equivale a uma _rolada_. Por exemplo, se forem dados 5 Incrições de presente, você receberá 5 roladas.
+</Note>
 
 ---
 
@@ -65,20 +67,23 @@ Quer escolher uma receita para fazer ou o filme para assistir na live? Você pod
 Siga esses passos:
 
 1. **Verifique seu inventário**
-   * Liste seus itens disponíveis com `!roladas`.
+   - Liste seus itens disponíveis com `!roladas`.
 2. **Execute o comando de escolha**:
+
    ```bash
    !roladas escolher <item> <detalhe>
    ```
-   * `<item>`: tipo de item a ser escolhido (ex: `filme`, `receita`).
-   * `<detalhe>`:
-     * **Filmes/Séries/Animes**: cole o link completo do IMDb (ex: `https://www.imdb.com/title/tt0123456/`).
-     * **Acessórios, Balões e Receitas**: descreva brevemente (ex: `Chapéu de palha com fitas coloridas`).
+   - `<item>`: tipo de item a ser escolhido (ex: `filme`, `receita`).
+   - `<detalhe>`:
+     - **Filmes/Séries/Animes**: cole o link completo do IMDb (ex: `https://www.imdb.com/title/tt0123456/`).
+     - **Acessórios, Balões e Receitas**: descreva brevemente (ex: `Chapéu de palha com fitas coloridas`).
 3. **Confirmação**
-   * A **SayuritaBOT** responderá confirmando sua escolha.
-   * Seu item será salvo com o conteúdo que você escolheu na lista de recompensas.
+   - A **SayuritaBOT** responderá confirmando sua escolha.
+   - Seu item será salvo com o conteúdo que você escolheu na lista de recompensas.
 
-<Tip>**Dica:** Use o comando `!roladas` após escolher para conferir seu saldo de itens.</Tip>
+<Tip>
+  **Dica:** Use o comando `!roladas` após escolher para conferir seu saldo de itens.
+</Tip>
 
 ---
 
@@ -89,24 +94,28 @@ Tem algum item que você ainda não escolheu e que está parado pegando pó? Voc
 Para trocar, siga este passo a passo:
 
 1. **Revise seus itens**
-   * Liste seus itens disponíveis com `!roladas`.
+   - Liste seus itens disponíveis com `!roladas`.
 2. **Escolha o tipo de troca**:
-   * **Troca direta (filme ↔ série)**
+   - **Troca direta (filme ↔ série)**
+
      ```bash
      !roladas trocar <item_antigo> = <item_novo>
      ```
-     * `<item_antigo>` e `<item_novo>`: apenas `filme` ou `série`.
-   * **Combinação de itens (2 → 1)**
+     - `<item_antigo>` e `<item_novo>`: apenas `filme` ou `série`.
+   - **Combinação de itens (2 → 1)**
+
      ```bash
      !roladas trocar <item_um> + <item_dois> = <item_novo>
      ```
-     * `<item_um>` e `<item_dois>`: `acessório`, `balão` ou `receita`.
-     * `<item_novo>`: qualquer tipo (`acessório`, `balão`, `receita`, `filme`, `série`).
+     - `<item_um>` e `<item_dois>`: `acessório`, `balão` ou `receita`.
+     - `<item_novo>`: qualquer tipo (`acessório`, `balão`, `receita`, `filme`, `série`).
 3. **Confirmação**
-   * A **SayuritaBOT** responderá confirmando a troca.
-   * Os itens antigos serão marcados como *"trocado"* e seu novo item aparecerá na lista de recompensas.
+   - A **SayuritaBOT** responderá confirmando a troca.
+   - Os itens antigos serão marcados como _"trocado"_ e seu novo item aparecerá na lista de recompensas.
 
-<Tip>**Dica:** Verifique com `!roladas` se você realmente possui os itens necessários antes de trocar.</Tip>
+<Tip>
+  **Dica:** Verifique com `!roladas` se você realmente possui os itens necessários antes de trocar.
+</Tip>
 
 ---
 
@@ -115,17 +124,20 @@ Para trocar, siga este passo a passo:
 Quer presentear alguém com um dos seus itens? Use o comando de transferência:
 
 1. **Identifique o item** que deseja transferir:
-   * Liste seus itens disponíveis com `!roladas`.
+   - Liste seus itens disponíveis com `!roladas`.
 2. **Execute o comando**:
+
    ```bash
    !roladas transferir <item> <usuário_destino>
    ```
-   * `<item>`: tipo de item a ser transferido (ex: `balão`, `filme`).
-   * `<usuário_destino>`: inclua `@` para garantir o registro correto.
+   - `<item>`: tipo de item a ser transferido (ex: `balão`, `filme`).
+   - `<usuário_destino>`: inclua `@` para garantir o registro correto.
 3. **Confirmação**
-   * A **SayuritaBOT** responderá confirmando a transferência.
-   * O seu item será marcado com *"transferido"* e acrescentado na lista do usuário que recebeu.
+   - A **SayuritaBOT** responderá confirmando a transferência.
+   - O seu item será marcado com _"transferido"_ e acrescentado na lista do usuário que recebeu.
 
-<Tip>**Dica:** Antes de transferir, confirme o nome do usuário para evitar envios incorretos.</Tip>
+<Tip>
+  **Dica:** Antes de transferir, confirme o nome do usuário para evitar envios incorretos.
+</Tip>
 
 ---
