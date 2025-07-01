@@ -1,0 +1,75 @@
+---
+title: '!filme'
+description: 'O comando `!filme` permite marcar e consultar as informações de um filme ou série usando o [*TMDB*](https://www.themoviedb.org/).'
+---
+
+import ModWarn from '/snippets/mod-warn.mdx';
+
+## `!filme`
+
+Mostra informações do filme ou série que está sendo assistido na live.
+
+As informações mostradas são:
+- Nome
+- Ano de Lançamento
+- Duração
+- Sinopse
+
+---
+
+## `!filme assistir`
+
+Marca um filme ou série como assistindo e mostra informações como horário de início e duração.
+
+<ModWarn></ModWarn>
+
+### Sintaxe
+
+```bash
+!filme assistir <nome_do_filme>
+```
+
+### Exemplo
+
+```bash
+!filme assistir wall-e
+```
+
+### Props
+
+<ResponseField name="nome_do_filme" type="string" required>
+  O nome do filme ou série que deseja consultar.
+</ResponseField>
+
+---
+
+## `!filme info`
+
+Mostra informações de qualquer filme ou série.
+
+As informações mostradas são:
+- Nome
+- Ano de Lançamento
+- Duração
+- Avaliação *(no TMDB)*
+- Link do IMDB
+
+<ModWarn></ModWarn>
+
+### Sintaxe
+
+```bash
+!filme info <nome_do_filme>
+```
+
+### Exemplo
+
+```bash
+!filme info wall-e
+```
+
+### Props
+
+<ResponseField name="nome_do_filme" type="string" required>
+  O nome do filme ou série que deseja consultar.
+</ResponseField>

@@ -22,7 +22,9 @@
           {
             "group": "Lista de comandos",
             "pages": [
-              "commands/roladas"
+              "commands/roladas",
+              "commands/duda",
+              "commands/filme"
             ]
           }
         ]
