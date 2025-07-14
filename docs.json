@@ -8,29 +8,6 @@
     "dark": "#f87171"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guias",
-        "groups": [
-          {
-            "group": "Parkejunior",
-            "pages": [
-              "parkejunior/rewards-guide"
-            ]
-          },
-          {
-            "group": "Lista de comandos",
-            "pages": [
-              "commands/roladas",
-              "commands/duda",
-              "commands/filme"
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "logo": {
     "light": "/logo/light-sayurita.svg",
     "dark": "/logo/dark-sayurita.svg"
@@ -47,5 +24,51 @@
     "socials": {
       "github": "https://github.com/parkejunior"
     }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guias",
+        "groups": [
+          {
+            "group": "Entretenimento",
+            "pages": [
+              "entertainment/tv-guide"
+            ]
+          },
+          {
+            "group": "Parkejunior",
+            "pages": [
+              "parkejunior/rewards-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Comandos",
+        "groups": [
+          {
+            "group": "Lista de comandos",
+            "pages": [
+              "commands/roladas",
+              "commands/duda",
+              "commands/tv",
+              "commands/sayb"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
+          {
+            "group": "Changelog",
+            "pages": [
+              "changelog"
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
