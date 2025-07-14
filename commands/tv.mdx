@@ -1,0 +1,179 @@
+---
+title: '!tv'
+description: 'O comando `!tv` permite marcar e consultar as informações de um filme ou série.'
+---
+
+import { ModWarn } from '/snippets/mod-warn.jsx';
+
+## `!tv`
+
+Exibe as informações do filme ou série atualmente marcado como "assistindo" com o comando [`!tv assistir`](#tv-assistir).
+
+As informações mostradas são:
+- Nome
+- Ano de Lançamento
+- Duração
+- Sinopse (Apenas para filmes)
+- Link do [IMDb](https://www.imdb.com/)
+
+---
+
+## `!tv assistir`
+
+Marca um filme ou série como "assistindo" e mostra informações como:
+
+- Nome
+- Ano de Lançamento
+- Duração
+- Horário de início
+- Link do [IMDb](https://www.imdb.com/)
+- Sinopse (Apenas para filmes)
+
+<ModWarn></ModWarn>
+
+<Note>Caso a sinopse tenha mais que 350 caracteres, a **SayuritaBOT** irá resumir a sinopse original.</Note>
+
+<Tabs>
+  <Tab title="Filme">
+    #### Por título
+    ```bash
+    !tv assistir filme <titulo> [ano:<ano>]
+    ````
+    **Exemplo:** `!tv assistir filme wall-e ano:2008`
+
+    #### Por link do IMDb
+    ```bash
+    !tv assistir <link_do_imdb>
+    ```
+
+    **Exemplo:** `!tv assistir https://www.imdb.com/title/tt0910970/`
+
+    #### Props
+    <ResponseField name="titulo" type="string" required>
+      Título do filme.
+    </ResponseField>
+
+    <ResponseField name="link_do_imdb" type="string" required>
+      Link do IMDb.
+    </ResponseField>
+
+    <ResponseField name="ano" type="string">
+      Ano de lançamento *(opcional)*.
+    </ResponseField>
+  </Tab>
+  <Tab title="Série, anime, etc.">
+    #### Por título
+    ```bash
+    !tv assistir serie <titulo> [ano:<ano>] ep:<temporada_e_episodio>
+    ```
+
+    **Exemplo:** `!tv assistir serie Black Mirror ano:2011 ep:s03e01`
+
+    #### Por link do IMDb
+    ```bash
+    !tv assistir serie <link_do_imdb> ep:<temporada_e_episodio>
+    ```
+
+    **Exemplo:** `!tv assistir https://www.imdb.com/title/tt2085059/ ep:s03e01`
+
+    #### Props
+    <ResponseField name="titulo" type="string" required>
+      Título da série, anime, etc.
+    </ResponseField>
+
+    <ResponseField name="link_do_imdb" type="string" required>
+      Link do IMDb.
+    </ResponseField>
+
+    <ResponseField name="temporada_e_episodio" type="string" required>
+      Formato `SXXEXX` (ex: `S01E01`).
+    </ResponseField>
+
+    <ResponseField name="ano" type="string">
+      Ano de lançamento *(opcional)*.
+    </ResponseField>
+  </Tab>
+</Tabs>
+
+## `!tv info`
+
+Busca informações sobre qualquer outro filme ou série.
+
+<ModWarn></ModWarn>
+
+<Tabs>
+  <Tab title="Filme">
+    #### Por título
+    ```bash
+    !tv info filme <titulo> [ano:<ano>]
+    ```
+
+    **Exemplo:** `!tv info filme wall-e ano:2008`
+
+    #### Por link do IMDb
+    ```bash
+    !tv info <link_do_imdb>
+    ```
+
+    **Exemplo:** `!tv info https://www.imdb.com/title/tt0910970/`
+
+    #### Props
+    <ResponseField name="titulo" type="string" required>
+      Título do filme.
+    </ResponseField>
+
+    <ResponseField name="link_do_imdb" type="string" required>
+      Link do IMDb.
+    </ResponseField>
+
+    <ResponseField name="ano" type="string">
+      Ano de lançamento *(opcional)*.
+    </ResponseField>
+  </Tab>
+  <Tab title="Série, anime, etc.">
+    #### Por título
+    ```bash
+    !tv info serie <titulo> [ano:<ano>] ep:<temporada_e_episodio>
+    ```
+
+    **Exemplo:** `!tv info serie Black Mirror ano:2011 ep:s03e01`
+
+    #### Por link do IMDb
+    ```bash
+    !tv info serie <link_do_imdb> ep:<temporada_e_episodio>
+    ```
+
+    **Exemplo:** `!tv info https://www.imdb.com/title/tt2085059/ ep:s03e01`
+
+    #### Props
+    <ResponseField name="titulo" type="string" required>
+      Título da série, anime, etc.
+    </ResponseField>
+
+    <ResponseField name="link_do_imdb" type="string" required>
+      Link do IMDb.
+    </ResponseField>
+
+    <ResponseField name="temporada_e_episodio" type="string" required>
+      Formato `SXXEXX` (ex: `S01E01`).
+    </ResponseField>
+
+    <ResponseField name="ano" type="string">
+      Ano de lançamento *(opcional)*.
+    </ResponseField>
+  </Tab>
+</Tabs>
+
+## `!tv proximo`
+
+Se estiver atualmente vendo uma série, o episódio atual é marcado como "assistido" no [Trakt](https://trakt.tv/) (se configurado) e o próximo episódio é marcado como "assistindo".
+
+<ModWarn></ModWarn>
+
+---
+
+## `!tv parar`
+
+Marca o filme ou episódio da série como "assistido" no [Trakt](https://trakt.tv/) (se configurado) e o comando `!tv` é liberado.
+
+<ModWarn></ModWarn>
