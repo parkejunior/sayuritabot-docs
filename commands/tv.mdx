@@ -43,10 +43,10 @@ Marca um filme ou série como "assistindo" e mostra informações como:
 
     #### Por link do IMDb
     ```bash
-    !tv assistir <link_do_imdb>
+    !tv assistir filme <link_do_imdb>
     ```
 
-    **Exemplo:** `!tv assistir https://www.imdb.com/title/tt0910970/`
+    **Exemplo:** `!tv assistir filme https://www.imdb.com/title/tt0910970/`
 
     #### Props
     <ResponseField name="titulo" type="string" required>
@@ -74,7 +74,7 @@ Marca um filme ou série como "assistindo" e mostra informações como:
     !tv assistir serie <link_do_imdb> ep:<temporada_e_episodio>
     ```
 
-    **Exemplo:** `!tv assistir https://www.imdb.com/title/tt2085059/ ep:s03e01`
+    **Exemplo:** `!tv assistir serie https://www.imdb.com/title/tt2085059/ ep:s03e01`
 
     #### Props
     <ResponseField name="titulo" type="string" required>
@@ -112,10 +112,10 @@ Busca informações sobre qualquer outro filme ou série.
 
     #### Por link do IMDb
     ```bash
-    !tv info <link_do_imdb>
+    !tv info filme <link_do_imdb>
     ```
 
-    **Exemplo:** `!tv info https://www.imdb.com/title/tt0910970/`
+    **Exemplo:** `!tv info filme https://www.imdb.com/title/tt0910970/`
 
     #### Props
     <ResponseField name="titulo" type="string" required>
@@ -143,7 +143,7 @@ Busca informações sobre qualquer outro filme ou série.
     !tv info serie <link_do_imdb> ep:<temporada_e_episodio>
     ```
 
-    **Exemplo:** `!tv info https://www.imdb.com/title/tt2085059/ ep:s03e01`
+    **Exemplo:** `!tv info serie https://www.imdb.com/title/tt2085059/ ep:s03e01`
 
     #### Props
     <ResponseField name="titulo" type="string" required>
@@ -168,12 +168,26 @@ Busca informações sobre qualquer outro filme ou série.
 
 Se estiver atualmente vendo uma série, o episódio atual é marcado como "assistido" no [Trakt](https://trakt.tv/) (se configurado) e o próximo episódio é marcado como "assistindo".
 
+Assim como no comando [`!tv assistir`](#tv-assistir), também são mostradas informações como título, duração, etc.
+
+Caso a conta do Trakt não esteja vinculada, a **Sayurita** apenas vai atualizar o comando `!tv` para o próximo episódio.
+
 <ModWarn></ModWarn>
+
+<Note>
+Para marcar filmes e séries como assistido no [Trakt](https://trakt.tv/), o você precisa vincular sua conta do Trakt a SayuritaBOT. Você pode ver mais detalhes na documentação do comando [*!sayb*](/commands/sayb#sayb-trakt).
+</Note>
 
 ---
 
-## `!tv parar`
+## `!tv assistido`
 
-Marca o filme ou episódio da série como "assistido" no [Trakt](https://trakt.tv/) (se configurado) e o comando `!tv` é liberado.
+Marca o filme ou episódio da série como "assistido" no [Trakt](https://trakt.tv/) (se configurado) e o comando `!tv` é liberado. 
+
+Caso a conta do Trakt não esteja vinculada, a **Sayurita** vai apenas liberar o comando `!tv`.
 
 <ModWarn></ModWarn>
+
+<Note>
+Para marcar filmes e séries como assistido no [Trakt](https://trakt.tv/), o você precisa vincular sua conta do Trakt a SayuritaBOT. Você pode ver mais detalhes na documentação do comando [*!sayb*](/commands/sayb#sayb-trakt).
+</Note>
