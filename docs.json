@@ -50,6 +50,7 @@
           {
             "group": "Lista de comandos",
             "pages": [
+              "commands/bricks",
               "commands/roladas",
               "commands/duda",
               "commands/tv",

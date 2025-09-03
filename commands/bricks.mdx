@@ -1,0 +1,38 @@
+---
+title: '!bricks'
+description: 'O comando `!bricks` permite escolher o personagem que vai receber'
+---
+
+## `!bricks`
+
+Mostra a quantidade de recompensas e a lista de personagens disponíveis.
+
+---
+
+## `!bricks escolher`
+
+Permite trocar as recompensas de Bricks por um personagem escolhido.
+
+<Warning>Necessário que você tenha no **mínimo 5** Bricks para escolher um personagem.</Warning>
+
+<Note>Ao escolher, as recompensas de Bricks são marcadas como usadas e você precisa juntar novas recompensas para escolher outro personagem.</Note>
+
+### Sintaxe
+
+```bash
+!bricks escolher <id_do_bricks>
+```
+
+### Exemplo
+
+```bash
+!bricks escolher w2601-42
+```
+
+### Props
+
+<ResponseField name="id_do_bricks" type="string" required>
+ID do Bricks do personagem escolhido.
+
+Você pode ver o ID usando o comando `!bricks`.
+</ResponseField>
