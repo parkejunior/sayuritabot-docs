@@ -1,0 +1,74 @@
+---
+
+title: "Guia de Bricks"
+description: "Tudo que você precisa saber sobre como juntar, escolher e trocar personagens Bricks"
+icon: "puzzle-piece"
+--------------
+
+# O que são os Bricks?
+
+Os **Bricks** são personagens colecionáveis que apoiadores podem resgatar juntando recompensas da roleta. Esse guia explica como conseguir Bricks e como resgatar um personagem com o comando `!bricks escolher`.
+
+<img 
+  src="/images/bricks.jpg" 
+  alt="Bricks Make a Wise Life characters"
+  height="300"
+  className="rounded-lg"
+/>
+
+<Note>
+  Para resgatar um personagem é necessário ter **no mínimo 5 Bricks** acumulados. Ao resgatar, as 5 recompensas são marcadas como usadas.
+</Note>
+
+<Card title="Documentação do comando !bricks" icon="book" href="/commands/bricks" cta="Ler documentação">
+  Aqui você encontra a documentação do comando `!bricks` para mais detalhes.
+</Card>
+
+---
+
+## ✨ Como conseguir Bricks
+
+* A cada rolada na roleta você pode receber recompensas diversas. Juntando **5** dessas recompensas, você ganha o direito de trocar por um Bricks.
+* As formas de ganhar roladas continuam as mesmas (inscrição, inscrição de presente, bits, doações etc.) — consulte o [Guia de Recompensas](/parkejunior/rewards-guide) para detalhes sobre como ganhar recompensas.
+
+<Tip>
+  Acompanhe sempre as suas recompensas com `!roladas` ou `!bricks` para ver quantas recompensas faltam para completar 5 e resgatar um Bricks.
+</Tip>
+
+---
+
+## 🔎 Como ver seus Bricks e seus IDs
+
+Use o comando `!bricks` para ver quantos Bricks você tem e a lista de personagens disponíveis com seus respectivos IDs.
+
+```bash
+!bricks
+```
+
+O retorno mostrará a quantidade de Bricks disponíveis e os IDs (`w2601-42` por exemplo) de alguns personagens que você poderá usar no momento de escolher.
+
+Você também pode acessar a [lista](https://bit.ly/parkebricks) completa com todos os Bricks disponíveis. 
+
+---
+
+## 🎯 Como escolher um personagem Bricks
+
+Quando você tiver **pelo menos 5 Bricks**, escolha o personagem que quer receber usando:
+
+```bash
+!bricks escolher <id_do_bricks>
+```
+
+### Exemplo
+
+```bash
+!bricks escolher w2601-42
+```
+
+<Warning>
+  Certifique-se de ter **pelo menos 5** Bricks no inventário. Ao confirmar a escolha, as recompensas usadas são marcadas como usadas e você terá que juntar novas recompensas para outro resgate.
+</Warning>
+
+<Note>
+  O `id_do_bricks` é mostrado na listagem do comando `!bricks`. Use exatamente o ID informado.
+</Note>
