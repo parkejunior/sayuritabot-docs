@@ -9,7 +9,9 @@ import { ModWarn } from '/snippets/mod-warn.jsx';
 
 Mostra a quantidade de recompensas não usadas para cada tipo de item.
 
-Os tipos de itens mostrados são: `Acessório`, `Balão`, `Receita`, `Filme` e `Série/Anime`.
+Os tipos de itens mostrados são: `Bricks`, `Balão`, `Receita`, `Filme` e `Série/Anime`.
+
+---
 
 ## `!roladas add`
 
@@ -44,7 +46,7 @@ Adiciona uma recompensa a um usuário após o item cair na roleta.
 <ResponseField name="item" type="string" required>
   Tipo de item recebido.
 
-  Os tipos disponíveis são: `acessório`, `balão`, `receita`, `filme` e `série`.
+  Os tipos disponíveis são: `bricks`, `balão`, `receita`, `filme` e `série`.
 
   *Os tipos podem conter ou não acentuações.*
 </ResponseField>
@@ -54,6 +56,8 @@ Adiciona uma recompensa a um usuário após o item cair na roleta.
 ## `!roladas escolher`
 
 Permite escolher o conteúdo de um item recebido.
+
+<Info>Para escolher Bricks, use o comando [!bricks escolher](/commands/bricks#bricks-escolher).</Info>
 
 <Tabs>
   <Tab title="Filmes, séries ou animes">
@@ -74,7 +78,7 @@ Permite escolher o conteúdo de um item recebido.
     <ResponseField name="item" type="string" required>
       Tipo de item recebido.
 
-      Os tipos disponíveis são: `acessório`, `balão`, `receita`, `filme` e `série`.
+      Os tipos disponíveis são: `balão`, `receita`, `filme` e `série`.
 
       *Os tipos podem conter ou não acentuações.*
     </ResponseField>
@@ -102,7 +106,7 @@ Permite escolher o conteúdo de um item recebido.
     <ResponseField name="item" type="string" required>
       Tipo de item recebido.
 
-      Os tipos disponíveis são: `acessório`, `balão`, `receita`, `filme` e `série`.
+      Os tipos disponíveis são: `bricks`, `balão`, `receita`, `filme` e `série`.
 
       *Os tipos podem conter ou não acentuações.*
     </ResponseField>
@@ -156,7 +160,7 @@ Troca ou combina dois itens em um novo.
     ### Exemplo
 
     ```bash
-    !roladas trocar receita + acessório = filme
+    !roladas trocar receita + balão = filme
     ```
 
     ### Props
@@ -164,7 +168,7 @@ Troca ou combina dois itens em um novo.
     <ResponseField name="item_*" type="string" required>
       Tipo de item a ser combinado.
 
-      Os tipos disponíveis são: `acessório`, `balão` ou `receita`.
+      Os tipos disponíveis são: `bricks`, `balão` ou `receita`.
 
       *Os tipos podem conter ou não acentuações.*
     </ResponseField>
@@ -172,7 +176,7 @@ Troca ou combina dois itens em um novo.
     <ResponseField name="item_novo" type="string" required>
       Tipo de item a ser recebido na combinação.
 
-      Os tipos disponíveis são: `acessório`, `balão`, `receita`, `filme` e `série`.
+      Os tipos disponíveis são: `bricks`, `balão`, `receita`, `filme` e `série`.
 
       *Os tipos podem conter ou não acentuações.*
     </ResponseField>
@@ -202,7 +206,7 @@ Transfere um item para outro usuário.
 <ResponseField name="item" type="string" required>
   Tipo de item recebido.
 
-  Os tipos disponíveis são: `acessório`, `balão`, `receita`, `filme` e `série`.
+  Os tipos disponíveis são: `bricks`, `balão`, `receita`, `filme` e `série`.
 
   *Os tipos podem conter ou não acentuações.*
 </ResponseField>
@@ -210,6 +214,8 @@ Transfere um item para outro usuário.
 <ResponseField name="username" type="string" required>
   O nome do usuário que receberá a recompensa. Pode conter ou não o `@`.
 </ResponseField>
+
+---
 
 ## `!roladas lista`
 

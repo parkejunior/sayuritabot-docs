@@ -35,27 +35,27 @@ Apoiando o canal com **Inscrição** ou **Incrição de Presente**, enviando **1
 Os tipos de item que você pode receber na roleta são:
 
 <Columns cols={2}>
-  <Card title="👓 Acessório">
-    Uso um acessório até o fim da live
-  </Card>
-
   <Card title="🎈 Balão">
-    Balão com um desenho da sua escolha que ficará no cenário _(até murchar)_
+    Balão com um desenho da sua escolha que ficará no cenário _(até murchar)_.
   </Card>
 
   <Card title="🍰 Receita">
-    Escolha uma receita pra mim fazer em live
+    Escolha uma receita pra mim fazer em live.
   </Card>
 
   <Card title="🍿 Filme">
-    Escolha um filme de até 2 horas pra gente assistir na live
+    Escolha um filme de até 2 horas pra gente assistir na live.
+  </Card>
+
+  <Card title="📺 Série/Anime">
+    _Também podem ser desenhos, novelas, etc._
+
+    Escolha 3 episódios de até 25min, 2 episódios de até 45min ou 1 episódio de +45min pra gente assistir na live.
   </Card>
 </Columns>
 
-<Card title="📺 Série/Anime">
-   _Também podem ser desenhos, novelas, etc._
-
-   Escolha 3 episódios de até 25min, 2 episódios de até 45min ou 1 episódio de +45min pra gente assistir na live
+<Card title="🧩 Bricks">
+  Junte 5 recompensas e troque por um personagem Bricks que você pode receber em casa.
 </Card>
 
 Assim que a rolada acontecer, um moderador ou o streamer adicionará seu item, e você poderá escolher o conteúdo dessa recompensa.
@@ -68,7 +68,7 @@ Assim que a rolada acontecer, um moderador ou o streamer adicionará seu item, e
 
 ## 🔍 Como ver os itens recebidos
 
-Você pode ver a lista completa das recompensas da roleta que os apoiadores receberam aqui: https://t.ly/mgcIG
+Você pode ver a lista completa das recompensas da roleta que os apoiadores receberam aqui: https://bit.ly/parkeroladas
 
 ### Como encontrar meus itens
 
@@ -94,7 +94,7 @@ Siga esses passos:
    - `<item>`: tipo de item a ser escolhido (ex: `filme`, `receita`).
    - `<detalhe>`:
      - **Filmes/Séries/Animes**: cole o link completo do IMDb (ex: `https://www.imdb.com/title/tt0123456/`).
-     - **Acessórios, Balões e Receitas**: descreva brevemente (ex: `Chapéu de palha com fitas coloridas`).
+     - **Balões, Receitas e Bricks**: descreva brevemente (ex: `Chapéu de palha com fitas coloridas`).
 3. **Confirmação**
    - A **SayuritaBOT** responderá confirmando sua escolha.
    - Seu item será salvo com o conteúdo que você escolheu na lista de recompensas.
@@ -125,8 +125,8 @@ Para trocar, siga este passo a passo:
      ```bash
      !roladas trocar <item_um> + <item_dois> = <item_novo>
      ```
-     - `<item_um>` e `<item_dois>`: `acessório`, `balão` ou `receita`.
-     - `<item_novo>`: qualquer tipo (`acessório`, `balão`, `receita`, `filme`, `série`).
+     - `<item_um>` e `<item_dois>`: `bricks`, `balão` ou `receita`.
+     - `<item_novo>`: qualquer tipo (`bricks`, `balão`, `receita`, `filme`, `série`).
 3. **Confirmação**
    - A **SayuritaBOT** responderá confirmando a troca.
    - Os itens antigos serão marcados como _"trocado"_ e seu novo item aparecerá na lista de recompensas.
