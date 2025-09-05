@@ -22,13 +22,19 @@ Adiciona uma recompensa a um usuário após o item cair na roleta.
 ### Sintaxe
 
 ```bash
-!roladas add <username> <tipo_de_donate> <item>
+!roladas add <username> <tipo_de_donate> <item> [multiplicador]x
 ```
 
 ### Exemplo
 
 ```bash
 !roladas add @parkejunior resub filme
+```
+
+Para adicionar mais de uma recompensa, basta adicionar o multiplicador:
+
+```bash
+!roladas add @parkejunior resub filme 5x
 ```
 
 ### Props
@@ -199,6 +205,12 @@ Transfere um item para outro usuário.
 
 ```bash
 !roladas transferir receita @parkejunior
+```
+
+Para transferir mais de uma recompensa, basta adicionar o multiplicador:
+
+```bash
+!roladas transferir receita @parkejunior 3x
 ```
 
 ### Props

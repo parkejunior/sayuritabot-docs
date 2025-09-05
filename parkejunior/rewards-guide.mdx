@@ -159,3 +159,27 @@ Quer presentear alguém com um dos seus itens? Use o comando de transferência:
 </Tip>
 
 ---
+
+## ✖️ Uso do multiplicador
+
+Os comandos `!roladas add` e `!roladas transferir` aceitam um **multiplicador opcional** para indicar que a ação deve acontecer várias vezes de uma só vez. O multiplicador é um número inteiro seguido da letra `x` (sem espaço), por exemplo: `5x`.
+
+**Sintaxe básica:**
+
+```bash
+!roladas add <username> <tipo_de_donate> <item> [multiplicador]x
+!roladas transferir <item> <usuário_destino> [multiplicador]x
+```
+
+**Exemplos:**
+
+```bash
+!roladas add @parkejunior resub filme 5x     # adiciona 5 itens 'filme' para @parkejunior
+!roladas transferir receita @whaliaj 3x      # transfere 3 itens 'receita' para @whaliaj
+```
+
+<Note>O multiplicador é aplicado à quantidade do **mesmo** item especificado no comando.</Note>
+
+<Tip>**Dica:** Confirme o usuário e o item antes de executar comandos com multiplicador para evitar erros em lote.</Tip>
+
+---
